@@ -10,40 +10,34 @@
     transition: all 600ms ease 0s;
 }
 
-.hide {
-    opacity: 1;
-    animation-name: a1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    transition: all 600ms ease 0s;
-    transform: scale(0);
-    position: absolute !important;
-}
-
-.gridelement {
-    align-items: center;
-}
-
-@keyframes a1{
-    100% {
-        opacity: 0;
-        min-height: 0; 
-        min-width: 0;
-        padding: 0;
-        margin: 0;
-        border: 0;
-    } 
-  }
-
-  .content__grid-item {
-    float: left;
-    position: relative;
-}
-
-html, 
 body {
     background-color: rgb(247, 242, 242);
     font-family: 'Comfortaa', 'Roboto', sans-serif;
+}
+
+body.active {
+    background-color: #000;
+}
+
+body.active .content__grid-item,
+body.active .header__menu-container {
+    background-color: rgba(211, 211, 211, 0.144);
+    box-shadow: rgba(0, 0, 0, 0.1);
+    color: rgb(179, 179, 179);
+}
+
+body.active .header__contact-container {
+    color: rgb(179, 179, 179);
+}
+
+body.active .header__logo-text {
+    mix-blend-mode: multiply;
+    color: #fff;
+    background-color: #000;
+}
+
+.dragItem-active {
+    opacity: 0.4;
 }
 
 li {
@@ -139,10 +133,10 @@ a {
 }
 
 .header__menu-item:hover {
-    background-color: rgb(196, 138, 157);
-    border: rgb(196, 138, 157);
+    background-color: rgb(104, 104, 104);
+    padding: 4px;
     border-radius: 20px;
-    padding: 5px 5px;
+    box-shadow: inset rgba(161, 161, 161, 0.2);
 }
 
 .header__menu-item:last-child {
@@ -163,9 +157,6 @@ a {
     margin: 0 auto 50px auto; 
     max-width: 1200px;
     padding-top: 50px;
-}
-.grid {
-    position: relative;
 }
 
 .content__grid-item {
@@ -209,7 +200,10 @@ a {
 .content__flex-button{
     
 }
-.content__flex-item{}
+.content__flex-item:first-child {
+    margin-bottom: 20px;
+}
+
 .content__flex-picture img {
     width: 150px;
     height: 150px;
@@ -243,7 +237,6 @@ a {
     margin: auto auto;
 }
 
-.content__img{}
 .content__map iframe {
     width: 100%;
     height: 100%;
@@ -261,7 +254,7 @@ a {
 }
 
 .intro-box{
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     grid-column-start: 1;
@@ -351,6 +344,57 @@ a {
     grid-column-start: 4;
 }
 
+.interesting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle {
+    background: linear-gradient(to bottom, rgb(255, 244, 196), rgb(252, 204, 93));
+    box-shadow: inset 0 2px 60px rgba(49, 49, 102, 0.1),
+                inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+    border-radius: 160px;
+    transition: 0.5s;
+}
+
+#toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #fff;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+                inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#toggle.active .indicator {
+    left: 100px;
+    background: linear-gradient(to bottom, #444, #222);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+
+#toggle.active {
+    background: linear-gradient(to bottom, rgb(54, 66, 138), rgb(99, 72, 160));
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+
 .work-box.gridelement {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -380,6 +424,36 @@ a {
     top: 0%;
     left: 15%;
     transform: rotate(337deg);
+}
+
+.hide {
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: all 600ms ease 0s;
+    transform: scale(0);
+    position: absolute !important;
+}
+
+.gridelement {
+    align-items: center;
+}
+
+@keyframes a1{
+    100% {
+        opacity: 0;
+        min-height: 0; 
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    } 
+  }
+
+  .content__grid-item {
+    float: left;
+    position: relative;
 }
 
 
