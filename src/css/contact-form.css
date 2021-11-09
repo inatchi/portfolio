@@ -1,0 +1,35 @@
+* {
+    font-weight: 400;
+}
+
+.container,
+.container__form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__form-group {
+    margin-bottom: 30px;
+}
+
+.container__headline,
+.container__label,
+.container__control {
+    padding-bottom: 20px;
+}
+
+.container__control {
+    border-radius: 6px;
+    border: solid 1px rgb(175, 175, 175);
+    padding: 10px;
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+}
+
+.container__button {
+    display: flex;
+    justify-content: center;
+}
+
+.container__control::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
