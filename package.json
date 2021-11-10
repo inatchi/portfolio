@@ -1,4 +1,4 @@
-{		
+{
 		"homepage": "https://inatchi.github.oi/portfolio",
 		"name": "portfolio-main",
 		"version": "1.0.0",
@@ -15,7 +15,7 @@
 				"gulp-fonter": "latest",
 				"gulp-group-css-media-queries": "latest",
 				"gulp-image": "^6.2.1",
-				"gulp-imagemin": "^7.1.0",
+				"gulp-imagemin": "^6.2.0",
 				"gulp-newer": "latest",
 				"gulp-plumber": "latest",
 				"gulp-rename": "latest",

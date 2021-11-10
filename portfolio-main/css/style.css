@@ -766,7 +766,8 @@ a {
   grid-row-end: 3;
 }
 
-.work-box-2 {
+.work-box-2,
+.content__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -777,6 +778,12 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
+}
+
+.work-box-2 img {
+  width: 250px;
+  position: absolute;
 }
 
 .text-block,

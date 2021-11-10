@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendar.css">
     </script>
     <title>Natalia Safonova - Web Developer</title>
 </head>
@@ -36,22 +37,16 @@
                     <div class="content__flex-item intro-box__img-btn">
                         <div class="content__flex-picture"></div>
                         <div class="content__flex-button">
-                            <div class="more-button desktop"> 
+                            <div class="more-button"> 
                                 <a href="#popup3" class="popup-link">
-                                    <p class="content__visit">More about me</p>
-                                </a>
-                            </div>
-                            <div class="more-button mobile"> 
-                                <a href="#popup3" class="popup-link">
-                                    <p class="content__visit">More</p>
+                                    <a href="https://hh.ru/applicant/resumes/view?resume=e58c06d3ff092ccd640039ed1f6a633964594c" class="content__visit">Resume</a>
                                 </a>
                             </div>
                         </div>
-                        
                     </div>
                     <div class="content__flex-item">
                         <p class="content__text-intro">I'm <strong class="content__text-name">lia</strong>, a web developer and translator from Russia, Moscow.
-                        I'm interested in JavaScript, React JS, HTML, CSS, and Japanese.
+                        I'm interested in JavaScript, React JS, C# and Japanese.
                         Dreaming about California.
                     </p>
                     </div>
@@ -79,16 +74,29 @@
                     <a href="https://github.com/inatchi">
                         <i class="fab fa-github"></i>
                     </a>
+                    <a href="https://github.com/inatchi">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://github.com/inatchi">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>     
                 <div data-item="6"draggable="true" class="content__grid-item work-box projects dragItem">
-                    <a href="https://homerun-three.vercel.app/" class="content__visit-block">
+                    <a href="https://voices.vercel.app/" class="content__visit-block">
                         <p class="content__visit">Visit Site</p>
                         <img src="./img/link.svg" />
                     </a>
                 </div>
                 <div data-item="7"draggable="true" class="content__grid-item work-box-2 another-project projects about dragItem">
-                    <p class="content__text-intro">Skills and Tools</p>
-                    <div class="content__skill-git">Development: JavaScript, React, HTML, CSS/SCSS, Git</div>
+                    <div class="content__skills-pic">
+                    </div>
+                    <div class="content__skills">
+                        <div class="content__skills-dev">
+                            <p class="content__text-intro">Skills & Tools</p>
+                            <div class="content__skill-git">HTML, CSS/SCSS, Git, Gulp, Webpack, Node.js, JavaScript, React JS, C#, Webflow, Figma</div>
+                        </div>
+                    </div>
+
                 </div>
                 <div data-item="8" draggable="true" class="content__grid-item block projects interesting dragItem">
                 <div id="toggle">
@@ -105,7 +113,9 @@
                 <div class="popup__content">
                     <a href="#header" class="popup__close">X</a>
                     <div class="popup__title">This is about me</div>
-                    <div class="popup-text"></div>
+                    <div class="popup-text">
+                        
+                    </div>
 
                 </div>
             </div>
@@ -115,8 +125,24 @@
             <div class="popup__body">
                 <div class="popup__content">
                     <a href="#header" class="popup__close">X</a>
-                    <div class="popup__title">Hii</div>
-                    <div class="popup-text"></div>
+                    <div class="container">
+                        <h1 class="container__headline">Contact with me</h1>
+                        <div class="container__info">
+                            <div class="container__map">
+                                <img src="./img/map.png" />
+                            </div>
+                            <div class="container__detail">
+                                <div class="container__phone">
+                                    <h3>My cellphone</h3>
+                                    <a href="tel:+7 (914) 413 74 06">+7 (914) 413 74 06</a>
+                                </div>
+                                <div>
+                                    <h3>My e-mail</h3>
+                                    <a href="mailto:safonovanatalia117@gmail.com">safonovanatalia117@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -126,23 +152,13 @@
             <div class="popup__body">
                 <div class="popup__content">
                     <a href="#header" class="popup__close">X</a>
-                    <div className="modal__container">
-                        <div className="modal__flexbox">
-                            <div className="modal__picture-container">   
-                                <div className="modal__picture-me"><img src="img/smile-me.png" /></div>
-                                <div className="modal__social-box">
-                                    <a href="#" className="modal__link"><img src="./img/linkedin.svg" alt="" style="width: 40px; height: 40px;"></a>
-                                    <a href="#" className="modal__link"><img src="./img/hh-red-large.svg" alt=""  style="width: 40px; height: 40px;"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    
                 </div>
             </div>
         </div>
     </section>
     <script src="js/script.js"></script>
+    <script src="./js/calendar.js"></script>
     <script src="https://kit.fontawesome.com/e809f95026.js" crossorigin="anonymous"></script>
     <script src="./js/filter.js"></script>
     <script src="./js/night-mode.js"></script>
