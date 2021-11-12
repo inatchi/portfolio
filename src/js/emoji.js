@@ -13,4 +13,4 @@ workFace.addEventListener('click', () => {
         smileFace.classList.add('active');
         workFace.classList.remove('active');
 }
-})
+});

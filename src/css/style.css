@@ -295,16 +295,16 @@ a {
     min-height: 100%;
 }
 .content__flex-item:first-child {
-    margin-bottom: 36px;
+
 }
 
-.work-face img {
-    width: 120px;
-    height: auto;
+.content__flex-picture {
+    width: auto;
 }
 
-.smile-face img {
-    width: 100px;
+.work-face img,
+.smile-face img  {
+    width: 170px;
     height: auto;
 }
 
@@ -787,7 +787,7 @@ a {
 
     .content__flex-picture {
         width: 120px;
-        height: 120px;
+        height: fit-content;
     }
 
     .intro-box {
@@ -904,7 +904,7 @@ a {
 
     .content__flex-picture {
         width: 100px;
-        height: 100px;
+        height: fit-content;
     }
 
     .content__text-name {
@@ -956,7 +956,7 @@ a {
 
     .content__flex-picture {
         width: 100px;
-        height: 100px;
+        height: fit-content;
     }
 
     .more-button {
@@ -1007,7 +1007,7 @@ a {
 
     .content__flex-picture {
         width: 100px;
-        height: 100px;
+        height: fit-content;
     }
 
     .translation-box::after {
