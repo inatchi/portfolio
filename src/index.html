@@ -19,7 +19,6 @@
             <li class="header__menu-item" data-f="all">All</li>
             <li class="header__menu-item" data-f="about">About</li>
             <li class="header__menu-item" data-f="projects">Projects</li>
-            <li class="header__menu-item" data-f="media">Media</li>
         </ul>
         <div class="header__contact-container">
             <span class="contact">
@@ -35,12 +34,17 @@
             <div class="content__grid dropZone" data-zone="1">
                 <div class="content__grid-item intro-box about dragItem" data-item="1" draggable="true">
                     <div class="content__flex-item intro-box__img-btn">
-                        <div class="content__flex-picture"></div>
+                        <div class="content__flex-picture">
+                            <div class="content__emoji smile-face closed active">
+                                <img src="./img/smile-me.png" alt="">
+                            </div>
+                            <div class="content__emoji work-face open">
+                                <img src="./img/works.png" alt="">
+                            </div>
+                        </div>
                         <div class="content__flex-button">
-                            <div class="more-button"> 
-                                <a href="#popup3" class="popup-link">
+                            <div class="more-button">
                                     <a href="https://hh.ru/applicant/resumes/view?resume=e58c06d3ff092ccd640039ed1f6a633964594c" class="content__visit">Resume</a>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -53,6 +57,9 @@
                     
                 </div>
                 <div data-item="2" draggable="true" class="content__grid-item map-box box-width about dragItem">
+                    <div class="content__map-box">
+                        <iframe style="border-radius: 30px; width: 100%; height: 100%;" src="https://yandex.com/map-widget/v1/?um=constructor%3A4f33f1986e151b8dcae9a8a005a7833de08e51f33a9fc541d8feb0668245289b&amp;source=constructor" frameborder="0"></iframe>
+                    </div>
                 </div>
                 <div data-item="3"  data-zone="3" draggable="true" class="content__grid-item translation-box projects dragItem">
                     <a href="https://homerun-three.vercel.app/" class="content__visit-block">
@@ -61,7 +68,7 @@
                     </a>
                 </div>
                 
-                <div data-item="4"draggable="true" class="content__grid-item text-block media dragItem">
+                <div data-item="4"draggable="true" class="content__grid-item text-block projects dragItem">
                     <p class="content__text-intro">
                         Widget calendar
                     </p>
@@ -70,19 +77,13 @@
                         <img src="./img/link.svg">
                     </a>
                 </div> 
-                <div data-item="5"draggable="true" class="content__grid-item blue-box media dragItem">
-                    <a href="https://github.com/inatchi">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://github.com/inatchi">
-                        <i class="fab fa-github"></i>
-                    </a>
+                <div data-item="5"draggable="true" class="content__grid-item blue-box about dragItem">
                     <a href="https://github.com/inatchi">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>     
                 <div data-item="6"draggable="true" class="content__grid-item work-box projects dragItem">
-                    <a href="https://voices.vercel.app/" class="content__visit-block">
+                    <a href="https://voices-cwasfh253-inatchi.vercel.app/" class="content__visit-block">
                         <p class="content__visit">Visit Site</p>
                         <img src="./img/link.svg" />
                     </a>
@@ -111,7 +112,7 @@
             <a href="#header" class="popup__area"></a>
             <div class="popup__body">
                 <div class="popup__content">
-                    <a href="#header" class="popup__close">X</a>
+                    <a href="#header" class="popup__close"><i class="fas fa-times"></i></a>
                     <div class="popup__title">This is about me</div>
                     <div class="popup-text">
                         
@@ -129,7 +130,8 @@
                         <h1 class="container__headline">Contact with me</h1>
                         <div class="container__info">
                             <div class="container__map">
-                                <img src="./img/map.png" />
+                                    <iframe style="border-radius: 30px; width: 500px; height: 450px;" src="https://yandex.com/map-widget/v1/?um=constructor%3A4f33f1986e151b8dcae9a8a005a7833de08e51f33a9fc541d8feb0668245289b&amp;source=constructor" frameborder="0"></iframe>
+                                
                             </div>
                             <div class="container__detail">
                                 <div class="container__phone">
@@ -151,13 +153,14 @@
             <a href="#header" class="popup__area"></a>
             <div class="popup__body">
                 <div class="popup__content">
-                    <a href="#header" class="popup__close">X</a>
+                    <a href="#header" class="popup__close"><i class="fas fa-times"></i></a>
                     
                 </div>
             </div>
         </div>
     </section>
     <script src="js/script.js"></script>
+    <script src="./js/emoji.js"></script>
     <script src="./js/calendar.js"></script>
     <script src="https://kit.fontawesome.com/e809f95026.js" crossorigin="anonymous"></script>
     <script src="./js/filter.js"></script>
