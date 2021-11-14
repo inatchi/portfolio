@@ -30,6 +30,18 @@ body.active .content__grid-item a {
     color: #fff;
 }
 
+.dark {
+    display: none;
+}
+
+body.active .dark {
+    display: block;
+}
+
+body.active .white {
+    display: none;
+}
+
 body.active .content__grid-item a:hover {
     background-color: rgb(53, 53, 53);
 }
@@ -67,7 +79,7 @@ body.active .container__detail a {
 }
 
 body.active .content__visit-block {
-    background-color: rgb(31, 31, 31);
+    background-color: transparent;
 }
 
 body.active .header__contact-container {
@@ -422,7 +434,8 @@ a {
     bottom: 4%;
     left: 10%;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 30px;
+    border: #e7e7e7 solid 2px;
     font-size: 14px;
     padding: 7px 8px;
 }
@@ -525,6 +538,7 @@ a {
 
 .fa-github{
     font-size: 70px;
+    color: #fff;
 }
 
 .fa-github:hover {
@@ -597,7 +611,7 @@ a {
     
 }
 
-.interesting.gridelement {
+.gridelement .interesting {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 4;
@@ -691,31 +705,26 @@ a {
 }
 
 .hide {
-    opacity: 1;
-    animation-name: a1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    transition: all 300ms ease 0s;
-    transform: scale(0);
-    position: absolute !important;
+    display: none;
 }
 
 .gridelement {
-    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
 }
 
-@keyframes a1{
-    100% {
-        opacity: 0;
-        min-height: 0; 
-        min-width: 0;
-        padding: 0;
-        margin: 0;
-        border: 0;
-    } 
-    }
+.gridelement .intro-box {
+    grid-column-end: 3;
+    height: fit-content;
+}
 
-    .content__grid-item {
+.gridelement .blue-box {
+    grid-column-start: 4;
+}
+
+.gridelement .interesting {
+}
+
+.content__grid-item {
     float: left;
     position: relative;
 }
@@ -767,6 +776,11 @@ a {
         margin: 0 auto;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
+    }
+
+    .gridelement {
+        grid-template-rows: repeat(2, 1fr);
+        min-height: auto;
     }
 
     .contact {
@@ -832,6 +846,11 @@ a {
         grid-row-start: 3;
     }
 
+    .gridelement .blue-box {
+        grid-column-start: span 2;
+        grid-row-start: 2;
+    }
+
     .social {
         grid-row-start: 5;
     }
@@ -844,6 +863,11 @@ a {
     .work-box-2 {
         grid-row-start: 5;
         grid-column: span 4;
+    }
+
+    .gridelement .work-box-2 {
+        grid-row-start: 2;
+        grid-column: span 2;
     }
 
     .block {
@@ -894,6 +918,10 @@ a {
         grid-gap: 15px;
     }
 
+    .gridelement {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
     .content__grid-item {
         max-height: 350px;
         overflow: hidden;
@@ -929,6 +957,10 @@ a {
 
     .content__grid-item:nth-child(2) {
         padding: 0;
+    }
+
+    .work-face img, .smile-face img {
+        width: 100px;
     }
 
     .content__grid-item:nth-child(6) {
@@ -1003,6 +1035,31 @@ a {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(13, 1fr);
         grid-gap: 15px;
+    }
+
+    .gridelement {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridelement .intro-box {
+        grid-column: span 2;
+        grid-row-start: 1;
+    }
+
+    .gridelement .map-box {
+        grid-column: span 2;
+        grid-row-start: 2;
+    }
+
+    .gridelement .blue-box {
+        grid-column: span 2;
+        grid-row-start: 3;
+    }
+
+    .gridelement .work-box-2 {
+        grid-column: span 2;
+        grid-row-start: 4;
     }
 
     .more-button {
@@ -1107,6 +1164,11 @@ a {
         grid-template-rows: repeat(8, 1fr);
     }
 
+    .gridelement {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .intro-box,
     .map-box,
     .translation-box,
@@ -1120,14 +1182,6 @@ a {
         grid-column: span 1;
         grid-row: span 1;
     } 
-
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
 
     .translation-box::after {
         width: 300px;

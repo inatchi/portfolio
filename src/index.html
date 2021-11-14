@@ -15,11 +15,13 @@
                 <a href="#" class="header__logo-text">lia</a> 
             </div>
         </div>
-        <ul class="header__menu-container">
-            <li class="header__menu-item" data-f="all">All</li>
-            <li class="header__menu-item" data-f="about">About</li>
-            <li class="header__menu-item" data-f="projects">Projects</li>
-        </ul>
+        <nav>
+            <ul class="header__menu-container" id="filter">
+                <li class="header__menu-item" data-f="all">All</li>
+                <li class="header__menu-item" data-f="about">About</li>
+                <li class="header__menu-item" data-f="projects">Projects</li>
+            </ul>
+        </nav>
         <div class="header__contact-container">
             <span class="contact">
                 <a href="#popup2" class="popup-link">
@@ -64,17 +66,19 @@
                 <a href="https://homerun-three.vercel.app/" data-item="3"  data-zone="3" draggable="true" class="content__grid-item translation-box projects dragItem">
                     <div class="content__visit-block">
                         <p class="content__visit">Visit Site</p>
-                        <img src="./img/link.svg">
+                        <img class="white" src="./img/link.svg">
+                        <img class="dark" src="./img/vector.svg">
                     </div>
                 </a>
                 
-                <a  href="#popup" data-item="4"draggable="true" class="content__grid-item text-block projects dragItem">
+                <a  href="#popup" data-item="4" draggable="true" class="content__grid-item text-block projects dragItem">
                     <p class="content__text-intro">
                         Widget calendar
                     </p>
                     <div class="content__visit-block">
                         <p class="content__visit">Open</p>
-                        <img src="./img/link.svg">
+                        <img class="white" src="./img/link.svg">
+                        <img class="dark" src="./img/vector.svg">
                     </div>
                 </a> 
                 <a  href="https://github.com/inatchi" data-item="5"draggable="true" class="content__grid-item blue-box about dragItem">
@@ -85,10 +89,11 @@
                 <a  href="https://voices-cwasfh253-inatchi.vercel.app/" data-item="6"draggable="true" class="content__grid-item work-box projects dragItem">
                     <div class="content__visit-block">
                         <p class="content__visit">Visit Site</p>
-                        <img src="./img/link.svg" />
+                        <img class="white" src="./img/link.svg" />
+                        <img class="dark" src="./img/vector.svg">
                     </div>
                 </a>
-                <div data-item="7"draggable="true" class="content__grid-item work-box-2 another-project projects about dragItem">
+                <div data-item="7"draggable="true" class="content__grid-item work-box-2 another-project about dragItem">
                     
                         <div class="content__skills-dev">
                             <p class="content__text-intro">Tools</p>
