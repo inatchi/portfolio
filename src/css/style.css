@@ -79,7 +79,7 @@ body.active .container__detail a {
 }
 
 body.active .content__visit-block {
-    background-color: transparent;
+    background-color: #313131;
 }
 
 body.active .header__contact-container {
@@ -714,7 +714,6 @@ a {
 
 .gridelement .intro-box {
     grid-column-end: 3;
-    height: fit-content;
 }
 
 .gridelement .blue-box {
